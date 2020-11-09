@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-family: helvetica;
+  }
+  
+  .movie-item {
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 15px 0;
+    padding: 5px;
+  }
