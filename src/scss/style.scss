@@ -35,7 +35,41 @@ h1.main-title {
 .release-date {
   font-size: 12px;
   font-style: italic;
-  margin: 10px 0;
+  margin: 0 0 15px 0;
   display: block;
 }
 
+.crawl-text-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 400px;
+  background: #000;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 300%;
+  font-weight: 600;
+  letter-spacing: 5px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+  overflow: hidden;
+  .crawl-text {
+    position: absolute;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 120s linear;
+  }
+}
+  
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+  100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
