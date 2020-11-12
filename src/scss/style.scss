@@ -1,15 +1,41 @@
 body {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+}
+
+h1 {
+  font-family: helvetica;
+}
+
+.movie-item {
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 15px;
+  padding: 5px;
+  div {
+    padding: 15px;
   }
-  
   h1 {
-    font-family: helvetica;
+    margin: 0;
   }
-  
-  .movie-item {
-    border: 1px solid black;
-    cursor: pointer;
-    margin: 15px 0;
-    padding: 5px;
-  }
+}
+
+h1.main-title {
+  text-align: center;
+}
+
+.list-container {
+  display: block;
+}
+
+.release-date {
+  font-size: 12px;
+  font-style: italic;
+  margin: 10px 0;
+  display: block;
+}
+
